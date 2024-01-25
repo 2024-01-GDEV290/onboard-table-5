@@ -374,7 +374,7 @@ MonoBehaviour:
   upperVerticalLimit: 60
   lowerVerticalLimit: 60
   cameraSpeed: 250
-  smoothCameraRotation: 0
+  smoothCameraRotation: 1
   cameraSmoothingFactor: 25
 --- !u!114 &687112182
 MonoBehaviour:
