@@ -5,7 +5,6 @@ using UnityEngine;
 namespace CMF
 {
     //A very simplified controller script;
-	//This script is an example of a very simple walker controller that covers only the basics of character movement;
     public class SimpleWalkerController : Controller
     {
         private Mover mover;
