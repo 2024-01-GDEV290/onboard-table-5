@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3298865786043155541}
   - component: {fileID: 1663029310166801316}
   - component: {fileID: 6518852508096464842}
+  - component: {fileID: 8537431689700369294}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -100,7 +101,22 @@ MonoBehaviour:
   movementSpeed: 7
   jumpSpeed: 10
   gravity: 10
-  cameraTransform: {fileID: 0}
+  cameraTransform: {fileID: 8545129414925776462}
+--- !u!114 &8537431689700369294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697079908485369520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2a3d8171879c3468224a2fc0f3e4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: 5
+  projectile: {fileID: 0}
+  delay: 1
 --- !u!1 &4546700287485560536
 GameObject:
   m_ObjectHideFlags: 0

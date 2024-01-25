@@ -6,6 +6,6 @@ public class projectile : MonoBehaviour
 {
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }
