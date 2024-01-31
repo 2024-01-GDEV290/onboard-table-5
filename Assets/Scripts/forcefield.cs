@@ -8,23 +8,30 @@ public class forcefield : MonoBehaviour
     public AudioClip powerDownSound;
 
     private AudioSource source;
+    private Animator anim;
 
     void Awake()
     {
         source = GetComponent<AudioSource>();
+        anim = GetComponent<Animator>();
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("projectile"))
         {
-            source.PlayOneShot(powerDownSound);
+            Invoke("PwrDnSFX", powerDownTime - powerDownSound.length);
             Invoke("PowerDown", powerDownTime);
+            anim.SetBool("hit", true);
         }
     }
-
     void PowerDown()
     {
         Destroy(this.gameObject);
+    }
+
+    private void PwrDnSFX()
+    {
+        source.PlayOneShot(powerDownSound);
     }
 }

@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36fc8f533d2e124ba43fe7386ba05f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerDownTime: 1
+  powerDownTime: 1.5
   powerDownSound: {fileID: 8300000, guid: f4db8c46d1946cf4d820786191c080eb, type: 3}
 --- !u!82 &8135250432736312550
 AudioSource:
@@ -256,7 +256,7 @@ Animator:
   m_GameObject: {fileID: 5803869169101745595}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b7044b4cb4f33c941b045f48da578da5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
