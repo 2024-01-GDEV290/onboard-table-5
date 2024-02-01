@@ -8,11 +8,15 @@ public class Player : MonoBehaviour
     public GameObject projectile;
     public float delay;
     public AudioClip shootSound;
+    public AudioClip footstep;
+    public AudioClip footstep2;
+
 
     private Camera cam;
     private float timeSinceLastShot;
     private Animator animator;
     private AudioSource sound;
+    private float stepTaken;
 
     private void Awake()
     {
@@ -24,6 +28,18 @@ public class Player : MonoBehaviour
     private void Update()
     {
         timeSinceLastShot += Time.deltaTime;
+        stepTaken += Time.deltaTime;
+
+        if (Input.GetAxis("Horizontal") != 0 && stepTaken >= 0.5 || Input.GetAxis("Vertical") != 0 && stepTaken >= 0.5)
+        {
+            stepTaken = 0;
+            sound.PlayOneShot(footstep);
+            if (stepTaken >= 0.25) 
+            {
+                stepTaken = 0;
+                sound.PlayOneShot(footstep2);
+            }
+        }
 
         if (animator.GetBool("Shot"))
         {

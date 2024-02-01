@@ -1493,6 +1493,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 6001046113632424470, guid: 20410d297b7668a499e85bed67e7f1a8,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537431689700369294, guid: 20410d297b7668a499e85bed67e7f1a8,
+        type: 3}
+      propertyPath: footstep
+      value: 
+      objectReference: {fileID: 8300000, guid: 7341ba07f02fa6941b16a463ddd73f99, type: 3}
+    - target: {fileID: 8537431689700369294, guid: 20410d297b7668a499e85bed67e7f1a8,
+        type: 3}
+      propertyPath: footstep2
+      value: 
+      objectReference: {fileID: 8300000, guid: 3efdd4c11a4bdc54a9087ab115c1de9e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
