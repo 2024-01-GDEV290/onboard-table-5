@@ -21,10 +21,13 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.visible = false;
         cam = GetComponentInChildren<Camera>();
         animator = GetComponentInChildren<Animator>();
         sound = GetComponentInChildren<AudioSource>();
     }
+
+    
 
     private void Update()
     {
