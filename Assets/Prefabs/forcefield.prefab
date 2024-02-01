@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerDownTime: 1.5
-  powerDownSound: {fileID: 8300000, guid: f4db8c46d1946cf4d820786191c080eb, type: 3}
+  powerDownSound: {fileID: 8300000, guid: 39ec01107480317478b375f8ad856a14, type: 3}
 --- !u!82 &8135250432736312550
 AudioSource:
   m_ObjectHideFlags: 0

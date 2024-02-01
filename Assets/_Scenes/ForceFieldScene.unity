@@ -571,11 +571,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/_Scenes/ForceFieldScene.unity
-  - {fileID: 2100000, guid: 70284e5c1fb229c4ba9db8261d43f781, type: 2}
-=======
   - {fileID: 2100000, guid: 3abf473d50106f44c9611c2c76fd9a91, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/ForceFieldScene.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1600,6 +1596,11 @@ PrefabInstance:
       propertyPath: footstep2
       value: 
       objectReference: {fileID: 8300000, guid: 3efdd4c11a4bdc54a9087ab115c1de9e, type: 3}
+    - target: {fileID: 8537431689700369294, guid: 20410d297b7668a499e85bed67e7f1a8,
+        type: 3}
+      propertyPath: shootSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d79bebc90492a44499144f0e882d7a8d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1667,11 +1668,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< Updated upstream:Assets/_Scenes/ForceFieldScene.unity
-  - {fileID: 2100000, guid: 70284e5c1fb229c4ba9db8261d43f781, type: 2}
-=======
   - {fileID: 2100000, guid: 3abf473d50106f44c9611c2c76fd9a91, type: 2}
->>>>>>> Stashed changes:Assets/Scenes/ForceFieldScene.unity
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
