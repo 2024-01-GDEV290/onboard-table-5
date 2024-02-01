@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public AudioClip shootSound;
     public AudioClip footstep;
     public AudioClip footstep2;
+    public AudioClip jump;
 
 
     private Camera cam;
@@ -34,11 +35,17 @@ public class Player : MonoBehaviour
         {
             stepTaken = 0;
             sound.PlayOneShot(footstep);
+
             if (stepTaken >= 0.25) 
             {
                 stepTaken = 0;
                 sound.PlayOneShot(footstep2);
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            sound.PlayOneShot(jump);
         }
 
         if (animator.GetBool("Shot"))

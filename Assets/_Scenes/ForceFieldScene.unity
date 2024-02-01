@@ -1583,6 +1583,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537431689700369294, guid: 20410d297b7668a499e85bed67e7f1a8,
         type: 3}
+      propertyPath: jump
+      value: 
+      objectReference: {fileID: 8300000, guid: 99ab8a4503de1f448ad764a5c4cdf9cc, type: 3}
+    - target: {fileID: 8537431689700369294, guid: 20410d297b7668a499e85bed67e7f1a8,
+        type: 3}
       propertyPath: footstep
       value: 
       objectReference: {fileID: 8300000, guid: 7341ba07f02fa6941b16a463ddd73f99, type: 3}
