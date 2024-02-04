@@ -20,6 +20,8 @@ public class forcefield : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("projectile"))
         {
+            source.Stop();
+            source.volume = 1;
             Invoke("PwrDnSFX", powerDownTime - powerDownSound.length);
             Invoke("PowerDown", powerDownTime);
             anim.SetBool("hit", true);
