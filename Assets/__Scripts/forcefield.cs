@@ -9,11 +9,13 @@ public class forcefield : MonoBehaviour
 
     private AudioSource source;
     private Animator anim;
+    private Animator parentAnim;
 
     void Awake()
     {
         source = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
+        parentAnim = GetComponentInParent<Animator>();
     }
 
     void OnCollisionEnter(Collision collision)
@@ -25,6 +27,7 @@ public class forcefield : MonoBehaviour
             Invoke("PwrDnSFX", powerDownTime - powerDownSound.length);
             Invoke("PowerDown", powerDownTime);
             anim.SetBool("hit", true);
+            parentAnim.SetBool("hit", true);
         }
     }
     void PowerDown()

@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public AudioClip footstep;
     public AudioClip footstep2;
     public AudioClip jump;
-
+    public GameObject flash;
 
     private Camera cam;
     private float timeSinceLastShot;
@@ -26,9 +26,7 @@ public class Player : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         sound = GetComponentInChildren<AudioSource>();
     }
-
     
-
     private void Update()
     {
         timeSinceLastShot += Time.deltaTime;
@@ -66,6 +64,13 @@ public class Player : MonoBehaviour
             blastRB.AddForce(cam.transform.forward * velocity);
             animator.SetBool("Shot", true);
             sound.PlayOneShot(shootSound);
+            flash.SetActive(true);
+            Invoke("EndFlash", 0.1f);
         }
+    }
+
+    private void EndFlash()
+    {
+        flash.SetActive(false);
     }
 }
