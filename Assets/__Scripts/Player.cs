@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     private Animator animator;
     private AudioSource sound;
     private float stepTaken;
-
+    
     private void Awake()
     {
         Cursor.visible = false;
